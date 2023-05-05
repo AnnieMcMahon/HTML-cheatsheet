@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!--HTML5-->
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Tags for Structure</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>HTML Semantic Tags for Structure</h1>
+    <nav>
+    </nav>
+  </header>
+  <hr />
+
+  <main>
+    <section>
+      <h2>Essential Tags</h2>
+      <h4>!DOCTYPE</h4>
+      <p>document type (!DOCTYPE html = HTML5)</p>
+      <h4>HTML</h4>
+      <p>root of an HTML document, containing all HTML content (except !DOCTYPE tag)</p>
+      <p>We can (and should) specify the language as an attribute (lang="en-US")</p>
+      <h4>HEAD</h4>
+      <p>document information: TITLE (required), META, LINK, SCRIPT, NOSCRIPT, STYLE, BASE</p>
+      <h4>BODY</h4>
+      <p>container for all the content that will be displayed</p>
+    </section>
+    <hr />
+    <section>
+      <h2>Content Tags</h2>
+      <h4>HEADER</h4>
+      <p>introductory information of a webpage or section (main header, navigation links)</p>
+      <h4>NAV</h4>
+      <p>contains navigation links (often included within the HEADER tag)</p>
+      <h4>MAIN</h4>
+      <p>main content (one per webpage); should not contain any content that is repeated across documents such as
+        sidebars, navigation links, copyright information, site logos, and search forms</p>
+      <article>
+        <h4>ARTICLE</h4>
+        <p>could stand independently of the page/site it is on (often used for blog posts)</p>
+      </article>
+      <h4>SECTION</h4>
+      <p>not necessarily self-contained; forms part of something else</p>
+      <div>
+        <h4>DIV</h4>
+        <p>can be used as a container for other HTML elements; STYLE, CLASS, and ID are commonly used attributes.</p>
+      </div>
+      <aside>
+        <h4>ASIDE</h4>
+        <p>nonessential content (often a side bar)</p>
+      </aside>
+      <figure>
+        <h4>FIGURE and FIGCAPTION</h4>
+        <p>self-contained content, such as illustrations, diagrams, and photos</p>
+        <img src="images/Semantic-html.webp" alt="Semantic HTML" width="400" />
+        <figcaption>Example of a webpage structure using semantic HTML</figcaption>
+      </figure>
+      <form>
+        <h4>FORM</h4>
+        <p>used to create an HTML form for user input</p>
+      </form>
+      <h4>SUMMARY</h4>
+      <p>visible heading for a DETAILS element (such as the "Details" title below)</p>
+      <h4>DETAILS</h4>
+      <details>
+        <summary>Details</summary>
+        <p>additional details the user can view or hide</p>
+      </details>
+
+      <h4>FOOTER</h4>
+      <p>usually includes contact information, copyright information, and some site navigation</p>
+    </section>
+    <hr />
+
+  </main>
+
+  <footer>
+  </footer>
+
+</body>
+
+</html>

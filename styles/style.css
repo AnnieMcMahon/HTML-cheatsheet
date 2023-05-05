@@ -1,0 +1,126 @@
+/* General */
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+p, address {
+  line-height: 2;
+}
+
+h2:not(.ignore) {
+  line-height: 1.2;
+  text-align: center;
+  padding: 10px;
+  background-color:rgb(126, 42, 42);
+  color: white;
+  margin: 0;
+}
+
+code:not(.ignore) {
+  background-color: rgb(228, 230, 167);
+  border: 2px solid rgb(148, 144, 144);
+  border-radius: 5px;
+  padding: 2px;
+}
+
+/* Nav Bar */
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(126, 42, 42);
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: rgb(224, 121, 121);
+}
+
+/* Header */
+.title-box {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-image: url("../images/coding.png");
+
+  opacity: 0.8;
+  margin-top: 45px;
+  border: 2px solid black;
+}
+
+.title-container {
+  display: block;
+  width: auto;
+  height: 100px;
+  margin: 50px 140px;
+  background-color: rgba(238, 247, 238, 1);
+  background-size: cover;
+  border: 1px solid black;
+}
+
+.title-container h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 100px;
+  font-weight: bold;
+  color: rgb(126, 42, 42);
+  text-align: center;
+  font-size: 3em;
+}
+
+/* Content Boxes */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.column-container {
+  flex-direction: column;
+  min-width: 50%;
+}
+
+.content-box {
+  display: block;
+  border: 1px solid rgb(126, 42, 42);
+}
+
+.text-box {
+  padding: 0 10px;
+}
+
+#headers, #useful-tags {
+  width: 50%;
+}
+
+iframe {
+  width: 49%;
+  height: 400px;
+}
+
+
+
+
+

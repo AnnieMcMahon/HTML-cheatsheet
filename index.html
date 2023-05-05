@@ -1,0 +1,172 @@
+<!DOCTYPE html> <!--HTML5-->
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Annie McMahon">
+  <meta name="description" content="Practice Coding is a project I am developing as I practice my coding skills. It includes
+    my notes and cheatsheets about HTML, CSS and JavaScript.">
+  <title>HTML Cheatsheet</title>
+  <link href="styles/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="home">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#headers">Headers</a></li>
+        <li><a href="#useful-tags">Useful Tags / Special Characters</a></li>
+        <li><a href="#paragraphs">Paragraphs</a></li>
+        <li><a href="#text-formatting">Text Formatting</a></li>
+        <li><a href="#images-links">Images/Links</a></li>
+        <li><a href="#iframes">I-frames></a></li>
+        <li><a href="#tables-lists">Tables/Lists</a></li>
+        <li><a href="#semantics">Semantics</a></li>
+      </ul>
+    </nav>
+    <div class="title-box">
+      <div class="title-container">
+        <h1>HTML Cheatsheet</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!--First Row of Boxes = headers and useful-tags-->
+    <div class="container">
+      <div class="content-box" id="headers">
+        <h2>Headers</h2>
+        <div class="text-box">
+          <h1>Headline Using <code>&lt;h1&gt;</code> Tag</h1>
+          <h2 class="ignore">Headline Using <code>&lt;h2&gt;</code> Tag</h2>
+          <h3>Headline Using <code>&lt;h3&gt;</code> Tag</h3>
+          <h4>Headline Using <code>&lt;h4&gt;</code> Tag</h4>
+          <h5>Headline Using <code>&lt;h5&gt;</code> Tag</h5>
+          <h6>Headline Using <code>&lt;h6&gt;</code> Tag</h6>
+        </div>
+      </div>
+
+      <div class="content-box" id="useful-tags">
+        <h2>Useful Tags / Special Characters</h2>
+        <div class="text-box">
+          <p>The <code>&lt;hr&gt;</code> tag will create a horizontal line to divide sections</p>
+          <hr />
+          <p>The <code>&lt;br&gt;</code> tag will start a new line or insert a blank line...
+            <br />
+            ...like so.
+          </p>
+          <hr />
+          <h3>Special Characters</h3>
+          <a href="https://www.w3schools.com/html/html_entities.asp" target="_blank">HTML Entities (reserved characters)</a>
+          <br />
+          <a href="https://www.w3schools.com/html/html_symbols.asp" target="_blank">HTML Symbols</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Second Row of Boxes = paragraphs and text-formatting/images-links -->
+    <div class="container">
+
+      <div class="content-box" id="paragraphs">
+        <h2>Paragraph Formatting</h2>
+        <div class="text-box">
+          <pre>
+              This paragraph uses the <code>&lt;pre&gt;</code> (preformatted) tag 
+
+              so I can insert       many spaces...
+
+
+              ...and it preserves them.
+            </pre>
+            <hr />
+          <p>The <code>&lt;pre&gt;</code> tag along with the <code>&lt;code&gt;</code> tag can be used to write computer
+            code
+            as text:</p>
+          <pre><code class="ignore">
+              if (size > 100) {
+                console.log('Big');
+              } else if (size > 20) {
+                console.log('Medium');
+              } else {
+                console.log('Small');
+              }  </code></pre>
+          <hr />
+          <p><q>This paragraph uses the <code>&lt;q&gt;</code> (quotation) tag.</q></p>
+          <br />
+          <hr />
+          <blockquote>This paragraph uses the <code>&lt;blockquote&gt;</code> tag.</blockquote>
+          <br />
+          <hr />
+          <p>In this paragraph, <address>the text in the <code>&lt;address&gt;</code> element renders in italic </address> and browsers will always add a line break before and after.</p>
+          <br />
+          <hr />
+          <p>This <cite>paragraph</cite> uses the <code>&lt;cite&gt;</code> tag to emphasize a title (in this case, the word "paragraph") and the <code>&lt;abbr&gt;</code> tag with a <code>title="ABBREVIATION"</code> attribute to insert the definition/word abbreviated, <abbr title="ABBREVIATION">ABBR</abbr>.</p>
+          <br />
+          <hr />
+          <p>This paragraph uses a <code>&lt;span&gt;</code> tag with the attribute
+            <code>&lt;style="color: red"&gt;</code> to emphasize a <span style="color: red">word</span>.
+          </p>
+          <br />
+          <hr />
+          <p>The following is a <code>&lt;bdo&gt;</code> tag using a <code>&lt;dir="rtl"&gt;</code>(right-to-left)
+            attribute:</p>
+          <p><bdo dir="rtl">The following is a <code>&lt;bdo&gt;</code> tag using a
+              <code>&lt;dir="rtl"&gt;</code>(right-to-left) attribute:</bdo></p>
+        </div>
+      </div>
+
+      <div class="column-container">
+        <div class="content-box" id="text-formatting">
+          <h2>Text Formatting</h2>
+          <div class="text-box">
+            <p><strong>Using the <code>&lt;strong&gt;</code> (important) tag</strong> or <b>the <code>&lt;b&gt;</code> (bold) tag</b></p>
+            <p><small>Using the <code>&lt;small&gt;</code> tag</small></p>
+            <p><mark>Using the <code>&lt;mark&gt;</code> tag</mark></p>
+            <p><i>Using the <code>&lt;i&gt;</code> (italic) tag</i> or <em>the <code>&lt;em&gt;</code> (emphasis) tag</em> or <var>the VAR (variable) tag</var>
+            </p>
+            <p><sup>Using the <code>&lt;sup&gt;</code> (superscript) tag</sup> or <sub>the <code>&lt;sub&gt;</code> (subscript) tag</sub></p>
+            <p><del>Using the <code>&lt;del&gt;</code> (delete) tag</del> or <ins>the <code>&lt;ins&gt;</code> (insert) tag</ins></p>
+            <p><kbd>Using the <code>&lt;kbd&gt;</code> (keyboard) tag</kbd> or <samp>the <code>&lt;samp&gt;</code> (sample output) tag</samp></p>
+          </div>
+        </div>
+
+        <div class="content-box" id="images-links">
+          <h2>Images and Links</h2>
+          <div class="text-box">
+            <p>Insert a <a href="semantics.html" target="_blank">link</a> using the <code>&lt;a&gt;</code> tag with the <code>href</code> attribute that points to a website or an internal page.<br /> 
+              Example: <code>&lt;a href="https://www.abc.org/"&gt;</code> <br/>
+              or <code>&lt;a href="href="semantics.html"&gt;</code></p>
+              <hr />
+            <p>The <code>target="_blank"</code> attribute can be used to open the link in a new page.</p>
+            <hr />
+            <p>Add an <code>id</code> attribute to any tag (example: <code>id="headers"</code>) to be able to jump to that section using an <code>&lt;a&gt;</code> tag with <code>href="#headers"</code> attribute.</p>
+            <hr />
+            <p>Insert an image using the <code>&lt;img&gt;</code> tag with the <code>src</code> attribute. <br />Example: <code>&lt;img src="images/forest.jpg"&gt;</code></p>
+            <img src="images/forest.jpg" alt="image of a forest" height="200" title="Enchanted Forest" />
+            <hr />
+            <p>This image is also a link (embed <code>&lt;img&gt;</code> tag within an <code>&lt;a&gt;</code>  tag instead of using text):</p>
+            <a href="index2.html" target="_blank"><img src="images/forest.jpg" alt="image of a forest" height="100"></a>
+              <hr />
+            <p>Use the <code>&lt;a&gt;</code> tag with the <code>href</code> attribute pointing to a PDF or DOCX document to create a downloadable link:
+              <a href="Learn_HTML.docx">HTML notes</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Third Row of Boxes = iframes -->
+    <div id="iframes">
+      <h2>I-Frames</h2>
+      <p>The <code>&lt;iframe&gt;</code> tag with <code>&lt;src&gt;</code> attribute can be used to insert a window with website content (also use <code>&lt;height&gt;</code> and <code>&lt;width&gt;</code> attributes to specify the size):</p>
+        <iframe id="tables-lists" src="tables_lists.html"></iframe>
+        <iframe id="semantics" src="semantics.html"></iframe>
+    </div>
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
