@@ -5,5 +5,5 @@ This is a place to keep all my notes about HTML as I am learning. I am using thi
 * HTML
 * CSS
 
-Web page: [https://anniemcmahon.github.io/html-cheatsheet/](https://anniemcmahon.github.io/html-cheatsheet/).
+Web page: [https://anniemcmahon.github.io/HTML-cheatsheet/](https://anniemcmahon.github.io/HTML-cheatsheet/).
 
